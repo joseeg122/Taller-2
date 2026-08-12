@@ -6,7 +6,7 @@ public class Variables {
         byte cantidadHermanos = 2;
 
         // Tipo short (numeros enteros medianos)
-        short anioNacimiento = 2005;
+        short AnoNacimiento = 2005;
         short poblacionCiudad = 12000;
 
         // Tipo int (numeros enteros comunes)
@@ -42,7 +42,7 @@ public class Variables {
         // Imprimir todas las variables
         System.out.println("Edad: " + edad);
         System.out.println("Cantidad de hermanos: " + cantidadHermanos);
-        System.out.println("Anio de nacimiento: " + anioNacimiento);
+        System.out.println("Ano de nacimiento: " + AnoNacimiento);
         System.out.println("Poblacion de la ciudad: " + poblacionCiudad);
         System.out.println("Numero de estudiantes: " + numeroEstudiantes);
         System.out.println("Codigo postal: " + codigoPostal);
@@ -61,4 +61,5 @@ public class Variables {
         System.out.println("Carrera: " + carrera);
         System.out.println("Universidad: " + universidad);
     }
-}# Taller-2
+}
+
