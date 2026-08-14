@@ -24,3 +24,24 @@ Cantidad de hermanos: 12
 Anio de nacimiento: 2024
 ...
 ```
+### Consola - Programa de ecuaciones
+
+```text
+Seleccione una opción:
+1. Solución ecuación 1
+2. Solución ecuación 2
+3. Salir
+Opción: 1
+Ingrese el valor de x: 5
+Ingrese el valor de z: 3
+Resultado: ...
+```
+
+---
+## Tecnologías utilizadas
+
+- Java
+- Scanner (`java.util.Scanner`)
+- Git y GitHub para control de versiones
+
+---
