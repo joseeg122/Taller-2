@@ -1,4 +1,4 @@
-public class Variables {
+public class Variables2 {
     public static void main(String[] args) {
 
         // Tipo byte (numeros enteros pequeños)
@@ -10,12 +10,12 @@ public class Variables {
         short poblacionCiudad = 12067;
 
         // Tipo int (numeros enteros comunes)
-        int numeroEstudiantes = 35;
-        int codigoPostal = 500;
+        int numeroEstudiantes = 47;
+        int codigoPostal = 600;
 
         // Tipo long (numeros enteros grandes)
-        long distanciaTierraLuna = 384400000L;
-        long numeroCuentaBancaria = 123;
+        long distanciaTierraLuna = 384L;
+        long numeroCuentaBancaria = 1234567890123L;
 
         // Tipo float (numeros decimales, menos precision)
         float precioLibro = 25.5f;
@@ -39,7 +39,33 @@ public class Variables {
         String carrera = "Ingenieria de Sistemas";
         String universidad = "Universidad Nacional";
 
-        // Imprimir todas las variables
+        // ===== Reasignacion usando el valor de OTRA variable (minimo 5) =====
+        // Nota: aqui NO se vuelve a escribir el tipo (int, float, etc.)
+        // porque la variable ya fue declarada arriba; solo se le da un nuevo valor.
+        edad = cantidadHermanos;               // byte = byte
+        anioNacimiento = poblacionCiudad;       // short = short
+        numeroEstudiantes = codigoPostal;       // int = int
+        distanciaTierraLuna = numeroCuentaBancaria; // long = long
+        precioCasa = pi;                        // double = double
+
+        // ===== Reasignacion con datos nuevos hardcoded (quemados) =====
+        cantidadHermanos = 5;
+        poblacionCiudad = 8500;
+        codigoPostal = 76001;
+        numeroCuentaBancaria = 9988776655443L;
+        precioLibro = 40.0f;
+        estaturaMetros = 1.68f;
+        pi = 3.14;
+        inicialNombre = 'M';
+        calificacion = 'B';
+        esEstudiante = false;
+        tieneLicencia = true;
+        nombre = "Maria Gomez";
+        ciudad = "Bogota";
+        carrera = "Ingenieria de Software";
+        universidad = "Universidad de Antioquia";
+
+        // Imprimir los valores despues de reasignar
         System.out.println("Edad: " + edad);
         System.out.println("Cantidad de hermanos: " + cantidadHermanos);
         System.out.println("Anio de nacimiento: " + anioNacimiento);
