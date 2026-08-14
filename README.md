@@ -11,3 +11,16 @@ Proyecto desarrollado en Java que trabaja el manejo de variables de distintos ti
 - Programa de menú interactivo con 3 opciones que permite al usuario resolver una de dos ecuaciones ingresando los valores de `x` y `z`.
 - Uso de estructuras condicionales (`if`, `else if`, `switch`) para controlar el flujo del programa.
 - Lectura de datos ingresados por el usuario mediante la clase `Scanner`.
+
+## Ejemplo de ejecución
+
+![Ejemplo](evidencias/Funcionando_1.png)
+
+### Consola - Programa de variables
+
+```text
+Edad: 20
+Cantidad de hermanos: 12
+Anio de nacimiento: 2024
+...
+```
