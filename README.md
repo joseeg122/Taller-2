@@ -45,3 +45,15 @@ Resultado: ...
 - Git y GitHub para control de versiones
 
 ---
+## Requisitos
+
+- Java JDK 8 o superior.
+- Un IDE como:
+  - Visual Studio Code con extensión para Java
+  ## Ejecución
+
+### 1. Compilar el programa de variables
+
+```bash
+javac Variables.java
+```
