@@ -43,11 +43,37 @@ Proyecto desarrollado en Java que trabaja el manejo de variables de distintos ti
 
 ## Manejo de errores (división entre cero)
 
-El programa valida los valores ingresados por el usuario para evitar divisiones entre cero. A continuación, capturas de los mensajes de error funcionando correctamente:
+El programa valida los valores ingresados por el usuario para evitar divisiones entre cero. A continuación, una captura del mensaje de error funcionando correctamente cuando `z = 0` en la ecuación 2:
 
-<!-- TODO: agregar aqui las capturas de los errores, por ejemplo: -->
-<!-- ![Error ecuacion 1](capturas/errores/error_ecuacion1.png) -->
-<!-- ![Error ecuacion 2](capturas/errores/error_ecuacion2.png) -->
+![Error z invalida](capturas/errores/z_invalida.PNG)
+
+También se valida cuando el usuario elige una opción del menú que no existe (por ejemplo, la opción `4`):
+
+![Opcion invalida manejada correctamente](capturas/errores/opcion_valida.PNG)
+
+## Errores encontrados durante el desarrollo
+
+Durante las pruebas del programa encontramos dos errores reales que no estaban contemplados inicialmente. Los documentamos aquí como parte del proceso de aprendizaje, en vez de ocultarlos:
+
+### 1. Error de formato decimal (Locale)
+
+Al ingresar `z = -0.5` (con punto decimal), el programa se rompía con `InputMismatchException`:
+
+![Error de decimales](capturas/errores/decimales.PNG)
+
+**Causa:** `Scanner` usa por defecto la configuración regional del sistema operativo. En computadores configurados en español, se espera que los decimales se escriban con coma (`-0,5`) en vez de punto (`-0.5`), por lo que el programa no reconocía el valor ingresado.
+
+**Solución aplicada:** se forzó el `Scanner` a usar el formato de números en inglés con `sc.useLocale(Locale.US);`, así siempre se interpreta el punto como separador decimal, sin importar la configuración del computador donde se ejecute.
+
+### 2. Error al ingresar texto en vez de un número en el menú
+
+Al escribir `-1/3` como opción del menú (en vez de un número entero), el programa se rompía con `InputMismatchException`:
+
+![Error opcion no numerica](capturas/errores/noexiste.PNG)
+
+**Causa:** `nextInt()` solo puede leer números enteros; si el usuario escribe texto, una fracción, o cualquier cosa que no sea un número entero válido, el programa no lo puede procesar y se cae.
+
+**Estado:** este error queda documentado como una limitación conocida del programa. Una posible mejora futura sería validar la entrada antes de leerla con `nextInt()`.
 
 ## Configuración de nombre y correo en los commits
 
