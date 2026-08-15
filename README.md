@@ -25,29 +25,27 @@ Proyecto desarrollado en Java que trabaja el manejo de variables de distintos ti
 
 ## Ejemplo de ejecución
 
-![Ejemplo](evidencias/Funcionando_1.png)
-
 ### Consola - Programa de variables
 
-```text
-Edad: 20
-Cantidad de hermanos: 12
-Anio de nacimiento: 2024
-...
-```
+![Variables funcionando](capturas/Variables_1.png)
 
-### Consola - Programa de ecuaciones
+### Consola - Programa de variables reasignadas
 
-```text
-Seleccione una opción:
-1. Solución ecuación 1
-2. Solución ecuación 2
-3. Salir
-Opción: 1
-Ingrese el valor de x: 5
-Ingrese el valor de z: 3
-Resultado: ...
-```
+![Variables reasignadas funcionando](capturas/Variables_2.png)
+
+### Configuración del entorno
+
+![Configuracion](capturas/Configuraci%C3%B3n.png)
+
+### Prueba del programa de ecuaciones
+
+![Prueba ecuaciones](capturas/Prueba.png)
+
+### Estructura de carpetas del proyecto
+
+![Carpeta del proyecto](capturas/Carpeta.png)
+
+📎 También puedes ver el documento completo con todas las capturas del funcionamiento de `Ecuaciones.java` aquí: [Capturas del funcionamiento del archivo](capturas/Capturas%20del%20funcionamiento%20del%20archivo.docx)
 
 ## Presentación
 
