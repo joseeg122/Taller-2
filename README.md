@@ -18,11 +18,15 @@ Proyecto desarrollado en Java que trabaja el manejo de variables de distintos ti
 - Lectura de datos ingresados por el usuario mediante la clase `Scanner`.
 - Validación de división entre cero en ambas ecuaciones, mostrando un mensaje de error en vez de un resultado sin sentido (`Infinity`).
 
-## Archivos del proyecto
+## Estructura del proyecto
 
-- `Variables.java` — declaración e inicialización de las 20 variables.
-- `Variables2.java` — versión con los valores reasignados (5 variables tomando el valor de otras, y el resto con datos nuevos hardcoded), tal como lo pide el punto 6 del taller.
-- `Ecuaciones.java` — programa con menú interactivo para resolver las dos ecuaciones.
+- `VSC/` — contiene los archivos de código Java:
+  - `Variables.java` — declaración e inicialización de las 20 variables.
+  - `Variables2.java` — versión con los valores reasignados (5 variables tomando el valor de otras, y el resto con datos nuevos hardcoded), tal como lo pide el punto 6 del taller.
+  - `Ecuaciones.java` — programa con menú interactivo para resolver las dos ecuaciones.
+- `capturas/` — evidencias del funcionamiento del programa (incluye la subcarpeta `errores/` con los bugs encontrados durante el desarrollo).
+- `leer/` — documentación adicional:
+  - `teoria_esteban.md` — pregunta de teoría y respuesta para la exposición.
 
 ## Ejemplo de ejecución
 
@@ -73,7 +77,7 @@ Al escribir `-1/3` como opción del menú (en vez de un número entero), el prog
 
 **Causa:** `nextInt()` solo puede leer números enteros; si el usuario escribe texto, una fracción, o cualquier cosa que no sea un número entero válido, el programa no lo puede procesar y se cae.
 
-**Estado:** este error queda documentado como una limitación conocida del programa. Una posible mejora futura sería validar la entrada antes de leerla con `nextInt()`.
+**Solución aplicada:** se agregó una validación con `sc.hasNextInt()` antes de leer la opción del menú. Si lo que se escribió no es un número entero, se descarta y se le vuelve a pedir al usuario, en vez de dejar que el programa se caiga.
 
 ## Configuración de nombre y correo en los commits
 
@@ -104,9 +108,12 @@ Como parte del taller, se investigó y aplicó cómo cambiar el nombre y correo 
 
 ## Ejecución
 
+Los archivos `.java` están dentro de la carpeta `VSC/`. Para compilarlos y ejecutarlos:
+
 ### 1. Compilar y ejecutar el programa de variables
 
 ```bash
+cd VSC
 javac Variables.java
 java Variables
 ```
@@ -114,6 +121,7 @@ java Variables
 ### 2. Compilar y ejecutar el programa de variables reasignadas
 
 ```bash
+cd VSC
 javac Variables2.java
 java Variables2
 ```
@@ -121,6 +129,7 @@ java Variables2
 ### 3. Compilar y ejecutar el programa de ecuaciones
 
 ```bash
+cd VSC
 javac Ecuaciones.java
 java Ecuaciones
 ```
