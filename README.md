@@ -3,9 +3,9 @@
 Proyecto desarrollado en Java que trabaja el manejo de variables de distintos tipos de datos primitivos, su inicialización, reasignación de valores, y la construcción de un programa con menú interactivo que utiliza estructuras condicionales y lectura de datos por consola con `Scanner` para resolver ecuaciones matemáticas.
 
 ## Participantes
-   - Esteban González Posada - [@estebangp2018-rgb](https://github.com/estebangp2018-rgb)
-   - Luis Monsalve - [@Monselmons](https://github.com/Monselmons)
-   - José Estrada - [@joseeg122](https://github.com/joseeg122)
+- Esteban González Posada - [@estebangp2018-rgb](https://github.com/estebangp2018-rgb)
+- Luis Monsalve - [@Monselmons](https://github.com/Monselmons)
+- José Estrada - [@joseeg122](https://github.com/joseeg122)
 
 ## Características
 
@@ -23,12 +23,6 @@ Proyecto desarrollado en Java que trabaja el manejo de variables de distintos ti
 - `Variables2.java` — versión con los valores reasignados (5 variables tomando el valor de otras, y el resto con datos nuevos hardcoded), tal como lo pide el punto 6 del taller.
 - `Ecuaciones.java` — programa con menú interactivo para resolver las dos ecuaciones.
 
-### Compilar y ejecutar Variables2.java
-\`\`\`bash
-javac Variables2.java
-java Variables2
-\`\`\`
-
 ## Ejemplo de ejecución
 
 ![Ejemplo](evidencias/Funcionando_1.png)
@@ -41,6 +35,7 @@ Cantidad de hermanos: 12
 Anio de nacimiento: 2024
 ...
 ```
+
 ### Consola - Programa de ecuaciones
 
 ```text
@@ -53,10 +48,13 @@ Ingrese el valor de x: 5
 Ingrese el valor de z: 3
 Resultado: ...
 ```
+
 ## Presentación
-   [Ver presentación](enlace-aqui)
+
+[Ver presentación](enlace-aqui)
 
 ---
+
 ## Tecnologías utilizadas
 
 - Java
@@ -64,20 +62,41 @@ Resultado: ...
 - Git y GitHub para control de versiones
 
 ---
-## Requisitos
-   - Java JDK 8 o superior.
-   - Un IDE como Visual Studio Code con extensión para Java
 
-   ## Ejecución
+## Requisitos
+
+- Java JDK 8 o superior.
+- Un IDE como Visual Studio Code con extensión para Java
+
+## Ejecución
 
 ### 1. Compilar y ejecutar el programa de variables
-   \`\`\`bash
-   javac Variables.java
-   java Variables
-   \`\`\`
 
-   ### 2. Compilar y ejecutar el programa de ecuaciones
-   \`\`\`bash
-   javac Ecuaciones.java
-   java Ecuaciones
-   \`\`\`
+```bash
+javac Variables.java
+java Variables
+```
+
+### 2. Compilar y ejecutar el programa de variables reasignadas
+
+```bash
+javac Variables2.java
+java Variables2
+```
+
+### 3. Compilar y ejecutar el programa de ecuaciones
+
+```bash
+javac Ecuaciones.java
+java Ecuaciones
+```
+
+---
+
+## Recursos utilizados
+
+- [Introducción a Java](https://www.youtube.com/watch?v=Ztr7_sNmSQI)
+- [¿Qué es un algoritmo?](https://www.youtube.com/watch?v=9ko3JV9pjbs)
+- [Condicionales](https://www.youtube.com/watch?v=6lk0cRlqnTU)
+- [Condicionales anidados](https://www.youtube.com/watch?v=ZbuI6P1yLc8)
+- [Lectura de datos I/O](https://www.youtube.com/watch?v=4jLxHxZGRas)
