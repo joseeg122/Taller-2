@@ -1,8 +1,12 @@
 import java.util.Scanner;
+import java.util.Locale;
  
 public class Ecuaciones {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        // Forzamos que los decimales se escriban con PUNTO (ej: -0.5)
+        // y no con coma, sin importar la configuracion regional del computador.
+        sc.useLocale(Locale.US);
         int opcion;
  
         // Bucle principal: se repite hasta que el usuario elija salir (opcion 3)
@@ -12,6 +16,16 @@ public class Ecuaciones {
             System.out.println("2. Solucion ecuacion 2");
             System.out.println("3. Salir");
             System.out.print("Elija una opcion: ");
+
+            // Validamos que lo que se escribio sea realmente un numero entero.
+            // Si no lo es (por ejemplo texto o una fraccion como "-1/3"),
+            // descartamos esa entrada y volvemos a pedirla, en vez de dejar
+            // que el programa se caiga con una excepcion.
+            while (!sc.hasNextInt()) {
+                System.out.println("Error: debe ingresar un numero entero (1, 2 o 3).");
+                sc.next(); // descarta lo que se escribio mal
+                System.out.print("Elija una opcion: ");
+            }
             opcion = sc.nextInt();
  
             if (opcion == 1) {
