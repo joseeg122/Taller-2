@@ -16,6 +16,7 @@ Proyecto desarrollado en Java que trabaja el manejo de variables de distintos ti
 - Programa de menú interactivo con 3 opciones que permite al usuario resolver una de dos ecuaciones ingresando los valores de `x` y `z`.
 - Uso de estructuras condicionales (`if`, `else if`, `switch`) para controlar el flujo del programa.
 - Lectura de datos ingresados por el usuario mediante la clase `Scanner`.
+- Validación de división entre cero en ambas ecuaciones, mostrando un mensaje de error en vez de un resultado sin sentido (`Infinity`).
 
 ## Archivos del proyecto
 
@@ -25,27 +26,36 @@ Proyecto desarrollado en Java que trabaja el manejo de variables de distintos ti
 
 ## Ejemplo de ejecución
 
-### Consola - Programa de variables
+### Consola - Programa de variables (Variables.java)
 
-![Variables funcionando](capturas/Variables_1.png)
+![Variables funcionando](capturas/Variables_2.png)
 
-### Consola - Programa de variables reasignadas
+### Consola - Programa de variables reasignadas (Variables2.java)
 
-![Variables reasignadas funcionando](capturas/Variables_2.png)
+![Variables reasignadas funcionando](capturas/Variables_1.png)
 
-### Configuración del entorno
+### Consola - Programa de ecuaciones (Ecuaciones.java)
 
-![Configuracion](capturas/Configuraci%C3%B3n.png)
-
-### Prueba del programa de ecuaciones
-
-![Prueba ecuaciones](capturas/Prueba.png)
-
-### Estructura de carpetas del proyecto
-
-![Carpeta del proyecto](capturas/Carpeta.png)
+<!-- TODO: agregar aqui la captura real de Ecuaciones.java corriendo -->
+<!-- ![Ecuaciones funcionando](capturas/Ecuaciones_funcionando.png) -->
 
 📎 También puedes ver el documento completo con todas las capturas del funcionamiento de `Ecuaciones.java` aquí: [Capturas del funcionamiento del archivo](capturas/Capturas%20del%20funcionamiento%20del%20archivo.docx)
+
+## Manejo de errores (división entre cero)
+
+El programa valida los valores ingresados por el usuario para evitar divisiones entre cero. A continuación, capturas de los mensajes de error funcionando correctamente:
+
+<!-- TODO: agregar aqui las capturas de los errores, por ejemplo: -->
+<!-- ![Error ecuacion 1](capturas/errores/error_ecuacion1.png) -->
+<!-- ![Error ecuacion 2](capturas/errores/error_ecuacion2.png) -->
+
+## Configuración de nombre y correo en los commits
+
+Como parte del taller, se investigó y aplicó cómo cambiar el nombre y correo asociados a los commits de Git:
+
+![Configuracion de git](capturas/Configuraci%C3%B3n.png)
+
+![Verificacion de configuracion de git](capturas/Prueba.png)
 
 ## Presentación
 
