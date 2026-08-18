@@ -53,7 +53,7 @@ El programa valida los valores ingresados por el usuario para evitar divisiones 
 
 También se valida cuando el usuario elige una opción del menú que no existe (por ejemplo, la opción `4`):
 
-![Opcion invalida manejada correctamente](capturas/errores/opcion.vaida.PNG)
+![Opcion invalida manejada correctamente](capturas/errores/opcion.valida.PNG)
 
 ## Errores encontrados durante el desarrollo
 
