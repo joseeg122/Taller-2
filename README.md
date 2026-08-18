@@ -89,7 +89,7 @@ Como parte del taller, se investigó y aplicó cómo cambiar el nombre y correo 
 
 ## Presentación
 
-[Ver presentación](presentación/Presentación_corregida.pdf)
+[Ver presentación](presentación/presentacion_ultimate.pdf)
 
 ---
 
