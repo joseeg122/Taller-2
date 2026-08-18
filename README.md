@@ -49,7 +49,7 @@ Proyecto desarrollado en Java que trabaja el manejo de variables de distintos ti
 
 El programa valida los valores ingresados por el usuario para evitar divisiones entre cero. A continuación, una captura del mensaje de error funcionando correctamente cuando `z = 0` en la ecuación 2:
 
-![Error z invalida](capturas/errores/z_invalida.PNG)
+![Error z invalida](capturas/errores/z.invalida.PNG)
 
 También se valida cuando el usuario elige una opción del menú que no existe (por ejemplo, la opción `4`):
 
