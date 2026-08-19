@@ -1,6 +1,5 @@
 # Pregunta de teoría — Tipos de datos primitivos en Java
 
-**Estudiante:** Esteban González Posada (@estebangp2018-rgb)
 
 ## Pregunta
 
